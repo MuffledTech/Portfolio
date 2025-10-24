@@ -8,6 +8,25 @@
     <title>Suresh Nepali | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .role {
+            font-size: 1.5rem;
+        }
+        .animated-role::after {
+            content: "";
+            font-weight: bold;
+            color: #ec1818;
+            animation: roleAnimation 6s infinite;
+        }
+
+        @keyframes roleAnimation {
+            0% { content: "Coder"; }
+            25% { content: "Designer"; }
+            50% { content: "Tech Enthusiast"; }
+            75% { content: "Programmer"; }
+            100% { content: "Developer"; }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +51,7 @@
         <div class="intro-text">
             <h2>Hello, It's me</h2>
             <h1 class="highlight">Suresh Nepali</h1>
-            <h3>I'm a <span style="color: red;" class="animated-role"></span></h3>
+            <h3 class="role">I'm a <span class="animated-role"></span></h3>
         </div>
         <div class="intro-image">
             <img src="user/2.png" alt="Profile Picture" loading="eager">
@@ -348,21 +367,6 @@
     <footer>
         <p>© 2025 Suresh Nepali | All Rights Reserved</p>
     </footer>
-
-    <script>
-        const roles = ["Coder", "Programmer", "Developer", "Designer"];
-        let i = 0;
-        const roleSpan = document.querySelector(".animated-role");
-
-        function changeRole() {
-            roleSpan.textContent = roles[i];
-            i = (i + 1) % roles.length;
-        }
-
-        changeRole();
-        setInterval(changeRole, 2000);
-    </script>
-
 </body>
 
 </html>
