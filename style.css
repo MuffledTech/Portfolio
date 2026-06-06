@@ -17,9 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -28,12 +27,16 @@ body {
 hr {
   border: none;
   height: 3px;
-  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent),
+    transparent
+  );
   margin: 3rem auto;
   width: 80%;
   border-radius: 5px;
 }
-
 
 /* ===== Header ===== */
 .head {
@@ -54,7 +57,6 @@ hr {
   letter-spacing: 1px;
 }
 
-
 nav ul {
   list-style: none;
   display: flex;
@@ -71,8 +73,6 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--accent);
 }
-
-
 
 /* ===== Hero Section ===== */
 .hero {
@@ -102,8 +102,6 @@ nav ul li a:hover {
   border-radius: 50%;
   border: 5px solid var(--accent);
 }
-
-
 
 /* ===== About ===== */
 section {
@@ -163,8 +161,6 @@ section {
   margin-bottom: 8px;
 }
 
-
-
 /* ===== Skills ===== */
 .skill-grid {
   display: grid;
@@ -188,8 +184,6 @@ section {
   color: var(--bg);
 }
 
-
-
 /* ===== My Works ===== */
 .work-grid {
   display: grid;
@@ -203,7 +197,9 @@ section {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   /* what does it do*/
 }
 
@@ -269,7 +265,6 @@ section {
   color: var(--bg);
 }
 
-
 /* ===== Certificates ===== */
 #certificate {
   margin-top: 10px;
@@ -287,7 +282,9 @@ section {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .certificate-card img {
@@ -312,7 +309,6 @@ section {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-
 /* ===== Services ===== */
 .service-grid {
   display: grid;
@@ -326,7 +322,9 @@ section {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .service-card img {
@@ -354,7 +352,6 @@ section {
 .service-card {
   padding: 15px;
 }
-
 
 /* ===== Contact ===== */
 .contact {
@@ -391,7 +388,9 @@ section {
   text-decoration: none;
   color: var(--primary);
   font-weight: 600;
-  transition: transform 0.3s, color 0.3s;
+  transition:
+    transform 0.3s,
+    color 0.3s;
 }
 
 .contact-item:hover {
@@ -408,7 +407,9 @@ section {
   background: var(--accent);
   box-shadow: 0 4px 12px rgba(74, 63, 53, 0.2);
   margin-bottom: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .contact-item:hover img {
